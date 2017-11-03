@@ -13,8 +13,8 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1><span class="glyphicon glyphicon-fire"></span>Hot Restaurant</h1>
-      <h3>Current Reservations and Waiting List</h3>
+      <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span>Hot Restaurant</h1>
+      <h3 class="text-center">Current Reservations and Waiting List</h3>
       <hr>
       <a href="/reserve"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> Make a reservation</button></a>
       <a href="/reserve"><button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span> Home </button></a>
@@ -92,7 +92,7 @@
 
       searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
 
-      $.get("/api/" + searchedCharacter, function(data) {
+      $.get("/api/ta" + searchedCharacter, function(data) {
         console.log(data);
         if (data) {
           $("#stats").show();
