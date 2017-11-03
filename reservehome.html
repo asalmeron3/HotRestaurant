@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title charset="UTF-8">
+		Reservation Home
+	</title>
+	<!-- Bootstrap -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Hot Restaurant</h1>
+      <p class="text-center">We only have 5 tables! Book your seat before they are all gone!</p>
+      <br>
+      <a href="/tables"><button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-list-alt"></span></span> View Tables </button></a>
+      <a href="/reserve"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation </button></a>
+    </div>
+    <button type="button" class="btn btn-link" onclick = "window.open('http://hot-restaurant.herokuapp.com/api/tables')"> API Table </button>
+    <button type="button" class="btn btn-link" onclick = "window.open('http://hot-restaurant.herokuapp.com/api/waitlist')">API Wait List</button>
